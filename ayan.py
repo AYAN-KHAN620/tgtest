@@ -8,6 +8,9 @@ import uuid
 import gc
 from collections import OrderedDict
 from typing import Optional
+import threading
+import urllib.request
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 from telegram import Update, ChatPermissions, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import (
