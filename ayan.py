@@ -1258,22 +1258,29 @@ def start_health_server():
     port = int(os.environ.get("PORT", 10000))
     server = HTTPServer(("0.0.0.0", port), _HealthHandler)
     threading.Thread(target=server.serve_forever, daemon=True).start()
-
 async def self_ping_loop():
     SELF_URL = os.environ.get("SELF_URL")
-    if not url:
+
+    if not SELF_URL:
         return
+
     while True:
         try:
             urllib.request.urlopen(SELF_URL, timeout=10).read()
         except Exception:
             pass
-        await asyncio.sleep(int(os.environ.get("SELF_PING_INTERVAL", "300")))
+
+        await asyncio.sleep(
+            int(os.environ.get("SELF_PING_INTERVAL", "300"))
+        )
 
 
 async def run_all_bots():
     global apps, bots, bot_usernames
-    start_health_server()\n    asyncio.create_task(self_ping_loop())\n    print("\n⏳ INITIALIZING...\n")
+
+    start_health_server()
+    asyncio.create_task(self_ping_loop())
+
     for token in TOKENS:
         if token.strip():
             try:
