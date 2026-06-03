@@ -24,7 +24,7 @@ from telegram.ext import (
 from telegram.error import RetryAfter
 
 TOKENS = [
-   "8281467228:AAHjqn3nVGecWjZ_T1PUlrYEeiKYLuflMmg",
+   "281467228:AAHjqn3nVGecWjZ_T1PUlrYEeiKYLuflMmg",
    "8464410238:AAF0i2Z_mk7fLR09e7XeoP-eIXmndI2eLCs",
    "8423707765:AAHIIo84awDGfCNeWbB20iMMDQZ2cE61zJ0",
    "8034624699:AAHC9KhBDWvnf-SKpxqVkbiXCmWjdh_cXWk",
@@ -43,6 +43,7 @@ TOKENS = [
    "8682383168:AAE_7u8nvGB1J0IvrUNP4Eoa4g0uW1C7FDs",
    "8700297166:AAGSqBgOWGn0Zk4uk99R_-lgT4Ii1ug_tgI"
 ]
+
 
 OWNER_ID = 2082618819
 SUDO_FILE = None  
@@ -104,7 +105,7 @@ SWIPE_TEXTS = [
 "NAME ̷C̷H̷U̷D̷K̷E̷ 𝙎𝙋𝘼𝙈 𝐘𝐀𝐇𝐈 𝘼𝙐𝙆𝘼𝙏 𝐇 𝙏𝙀𝙍𝙄 𝐆𝐀𝐑𝐈𝐁 ???? 😹🩵🙌🏼",
 "𝐂𝐏 𝐊𝐀𝐑 NAME 𝙂𝘼𝙍𝙄𝘽 𝐁𝐇𝐀𝐀𝐆 𝙈𝘼𝙏 𝐂𝐇𝐎𝐓𝐄𝐘 ???? 😂🩶🤚🏼",
 "NAME 𝐊𝐈 𝙈𝙐𝙈𝙈𝙔 𝐊𝐎 ̷R̷A̷N̷D̷I̷ 𝘽𝘼𝙉𝘼 𝘿𝙐𝙉𝙂𝘼 𝙃𝙀𝙃𝙀𝙃𝙀 ???? 🤣💖✌🏼",
-"NAME 𝐊𝐄 𝐁𝐀𝐀𝐏 𝘼𝙔𝘼𝙉 𝐘𝐄𝐇 𝐇𝐀𝐈 𝐈𝐍𝐊𝐈 𝐌𝐀𝐀 𝐊𝐄 𝐘𝐀𝐀𝐑 ???? 😆🩶🤚🏼",
+"NAME 𝐊𝐄 𝐁𝐀𝐀𝐏 RYUK 𝐘𝐄𝐇 𝐇𝐀𝐈 𝐈𝐍𝐊𝐈 𝐌𝐀𝐀 𝐊𝐄 𝐘𝐀𝐀𝐑 ???? 😆🩶🤚🏼",
 "𝐊𝐀𝐁𝐀𝐃𝐈 𝙒𝘼𝙇𝙀 NAME 𝐊𝐈 𝙈𝙆𝘽 ???? 🤣👻💗",
 "𝐀𝐑𝐄𝐘 NAME 𝐊𝐈 𝙈𝙆𝘽 𝙔𝘼𝘼𝙍 𝐁𝐇𝐀𝐆 𝙆𝘼𝙄𝙎𝙀 𝐑𝐇𝐄 𝐇𝐎 𝙂𝘼𝙍𝙄𝘽𝙊 ???? 😤👻💞",
 "𝘼𝙍𝙀𝙔 NAME 𝙈𝘼𝘾𝘾𝙃𝘼𝙍 𝙏𝙈𝙆𝘾 ???? 😂🩷✌🏾",
@@ -134,11 +135,11 @@ TARGET_SLIDE_TEXTS = [
 "𝙊𝙔𝙔 {} 𝙏𝘼𝙏𝙏𝙀 𝙈𝙐𝙅𝙀 𝘽𝘼𝘼𝙋 𝘽𝙉𝘼 𝙇𝙀 𝙉𝙔 𝙏𝙊 𝙏𝙀𝙍𝙄 𝙈𝘼 𝙍𝙉𝘿𝙔"
 ]
 
-REPLY_RYUK_TEXTS = [
+REPLY_MAFI_TEXTS = [
     
-"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙊 𝙏𝙐𝙈𝙃𝘼𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 😑🙌🏾",
+"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙊 𝙏𝙐𝙈𝙃𝘼𝙍𝙀 𝘽𝘼𝘼𝙋 RYUK 𝙆𝙄 😑🙌🏾",
 "𝙂𝘼𝘿𝘿𝙃𝘼 𝘿𝙄𝙆𝙃𝘼 𝙆𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘿𝙄𝙆𝙃𝙄 𝘾𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 🙊🤦🏾😂",
-"𝘼𝙔𝘼𝙉 𝘽𝘿𝙈𝙊𝙎𝙃 𝙎𝙋𝙀𝘼𝙆𝙄𝙉𝙂 𝙁𝙍𝙊𝙈 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽🤦🏾☎️ ",
+"RYUK 𝘽𝘿𝙈𝙊𝙎𝙃 𝙎𝙋𝙀𝘼𝙆𝙄𝙉𝙂 𝙁𝙍𝙊𝙈 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽🤦🏾☎️ ",
 "𝘾𝙐𝘿𝙉𝘼 𝙈𝙉𝘼 𝙃𝘼𝙄 😩🤟🏻",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙊𝘿 𝙆𝙀 𝙈𝘼𝙍 𝘿𝙐𝙉𝙂𝘼 🤣🖕🏾",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙐𝘿 𝙍𝙃𝙄 𝙃𝘼𝙄 𝙉𝘼𝘾𝙃𝙊 👻🕺",
@@ -148,18 +149,18 @@ REPLY_RYUK_TEXTS = [
 "𝙌 ❓🤨",
 "𝘾𝙐𝘿 𝙆𝙀 𝙈𝙍𝙂𝙔𝘼 𝙆𝙔𝘼 💀😹",
 "𝙃𝙇𝙒 𝙋𝙂𝙇 𝘽𝙃𝘼𝙂 𝙈𝙏 🏃‍♂️💨",
-"𝘼𝙔𝘼𝙉 𝘾𝙃𝙊𝘿 𝙍𝙃𝘼 𝙃𝘼𝙄 👻🔥",
+"RYUK 𝘾𝙃𝙊𝘿 𝙍𝙃𝘼 𝙃𝘼𝙄 👻🔥",
 "𝘾𝙔𝘼?",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 ❓",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝘿𝙐 ❓",
 "𝙃𝙀𝙇𝙋 𝙃𝙀𝙇𝙋 𝙈𝙏 𝙆𝙍 𝘾𝙊𝙏𝙐 😩👍🏾",
-"𝙋𝙐𝙅𝘼 𝙆𝙍 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 🙏🏾🔥🙏🏾🔥🙏🏾🔥🙏🏾🔥",
+"𝙋𝙐𝙅𝘼 𝙆𝙍 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 RYUK 𝙆𝙄 🙏🏾🔥🙏🏾🔥🙏🏾🔥🙏🏾🔥",
 "𝙃𝙇𝙒 𝙃𝙇𝙒 𝙃𝘼𝙈𝙇𝘼 𝙃𝙊𝙂𝙔𝘼 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽 𝙈𝙀 😱😂",
 "𝙏𝙀𝙍𝙄 𝘽𝙆𝘾 𝙈𝙀 𝘽𝙄𝙂𝘽𝙊𝙎𝙎 📺😆",
 "𝙃𝙇𝙒 𝙍𝙀𝙋𝙇𝙔 𝙁𝘼𝙎𝙏 ",
 "𝙁𝘼𝙎𝙏 𝙏𝙔𝙋𝙀 𝙆𝙍 𝘿𝘼𝙍 𝙈𝙏 😤⌨️",
 "𝙃𝙀𝙇𝙋 𝙃𝙀𝙇𝙋 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙃𝙐𝘿 𝙂𝙔𝙄 😩",
-"𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝙋𝙀𝙇 𝙍𝙃𝙀 𝙃𝘼𝙄 👻💪",
+"RYUK 𝘼𝘽𝘽𝙐 𝙋𝙀𝙇 𝙍𝙃𝙀 𝙃𝘼𝙄 👻💪",
 "𝙃𝙔 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝙍 𝙂𝙔𝙄 𝙆𝙔𝘼 😶💔",
 "𝘼𝙒𝙒 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙆𝙊 𝙋𝙊𝙊𝙆𝙄𝙀 𝘽𝙉𝘼𝙆𝙀 𝙈𝘼𝙍𝙐𝙉𝙂𝘼 🤣🎀",
 "𝙆𝙔𝘼 ❓😑",
@@ -168,15 +169,15 @@ REPLY_RYUK_TEXTS = [
 "𝙏𝘼𝙆𝙀 𝙔𝙊𝙐𝙍 𝙏𝙄𝙈𝙀 𝙁𝙄𝙍 𝘾𝙐𝘿 😉✌🏾😉✌🏾😉✌🏾",
 "𝙃𝙇𝙒 𝙆𝙐𝙏𝙄𝙔𝘼 𝙆𝙀 𝙇𝙍𝙆𝙀 🐶😆",
 "𝙃𝙇𝙒 𝙃𝙇𝙒 𝙈𝙅𝘼 𝘼𝘼𝙍𝙃𝘼 𝘾𝙐𝘿𝙉𝙀 𝙈𝙀 😜🔥",
-"𝘼𝙔𝘼𝙉 𝙂𝙉𝘿 𝙈𝘼𝘼𝙍 𝙍𝙃𝙀 𝙃𝘼𝙄 👻",
+"RYUK 𝙂𝙉𝘿 𝙈𝘼𝘼𝙍 𝙍𝙃𝙀 𝙃𝘼𝙄 👻",
 "𝙃𝙔 𝘾𝙊𝙏𝙐 𝘽𝙃𝙂 𝙈𝙏 𝙍𝙉𝘿𝙔 𝙆𝙀 🔥😑👍🏾",
 "𝘽𝙃𝘼𝙂𝙉𝘼 𝙈𝘼𝙉𝘼 𝙃𝘼𝙄 𝙅𝙄 🚫😎",
-"𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝘼𝘼𝙂𝙔𝙀 🤣🩷🙌🏾",
+"RYUK 𝘼𝘽𝘽𝙐 𝘼𝘼𝙂𝙔𝙀 🤣🩷🙌🏾",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝘼𝙍𝙆𝙀 𝙈𝙅𝘿𝙐𝙍𝙄 𝙆𝙃𝙏𝙈 👍🏾👍🏾👍🏾👍🏾👍🏾",
-"𝙆𝙔𝘼 𝘼𝙔𝘼𝙉 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝙃𝘼𝙄 👻❓",
-"𝙆𝙔𝘼 𝙈𝙏𝙇𝘽 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘼𝙔𝘼𝙉 𝙉𝙀 𝘾𝙊𝘿𝙄 😹🖕🏾😹🖕🏾💔",
+"𝙆𝙔𝘼 RYUK 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝙃𝘼𝙄 👻❓",
+"𝙆𝙔𝘼 𝙈𝙏𝙇𝘽 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 RYUK 𝙉𝙀 𝘾𝙊𝘿𝙄 😹🖕🏾😹🖕🏾💔",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 𝘽𝙃𝘼𝙂 𝙅𝘼𝙐𝙉𝙂𝘼 🙋🏾🤪",
-"𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 𝘼𝙔𝘼𝙉 𝘽𝙃𝘼𝙂 𝙂𝙔𝘼 🤦🏾💔",
+"𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 RYUK 𝘽𝙃𝘼𝙂 𝙂𝙔𝘼 🤦🏾💔",
 "𝘽𝙃𝘼𝙂 𝙌 𝙍𝙃𝘼 𝙃𝘼𝙄 ❓",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝙐𝙈𝘽𝘼𝙄 𝙈𝙀 𝘾𝙐𝘿𝙀𝙂𝙄 😌🩷🙌🏾",
 "𝙏𝙔𝙋𝙀 𝙆𝙍 𝙉𝘼 𝘼𝘽 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝙆𝙀 𝙎𝘼𝙈𝙉𝙀 ⁉️",
@@ -187,13 +188,13 @@ REPLY_RYUK_TEXTS = [
 "𝙄𝘿𝙃𝙍 𝘼𝙅𝘼 𝘾𝙃𝙊𝙏𝙀𝙔 👶🍼",
 "𝘽𝙃𝘼𝙂 𝙈𝙏 𝙆𝙐𝙏𝙏𝙄 𝙆𝙀 🙊😂",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙆𝙊 𝘽𝙀𝙉10 𝙈𝙀 𝘾𝙊𝘿𝙐𝙉𝙂𝘼 👽😱",
-"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙀𝙂𝘼 𝘼𝘼𝙅𝙎𝙀 𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝙆𝙄 😂🤟🏻😂🤟🏻",
+"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙀𝙂𝘼 𝘼𝘼𝙅𝙎𝙀 RYUK 𝘼𝘽𝘽𝙐 𝙆𝙄 😂🤟🏻😂🤟🏻",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙆𝙄 𝙋𝙊𝙊𝙆𝙄𝙀 𝙂𝙓𝙉𝘿 𝙈𝙀 𝙇𝙐𝙉 🎀",
 "𝘽𝙃𝘼𝙂 𝙈𝙏 𝘽𝙀𝙏𝙀 😑🙌🏾😑🙌🏾",
 "𝙄𝘿𝙃𝙍 𝘼𝙅𝘼 𝙇𝘼𝘿𝙇𝙀 😉❤️",
 "𝙏𝙀𝙍𝙄 𝙂𝙀𝙉𝘿 𝙈𝙀 100 𝙃𝘼𝙏𝙃 💯🔥",
 "𝙆𝙍 𝘼𝘽 𝙃𝘼𝙒𝘼𝘽𝘼𝘼𝙕𝙄?",
-"𝙇𝙀 𝘼𝘼𝙂𝙔𝘼 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 👻👑",
+"𝙇𝙀 𝘼𝘼𝙂𝙔𝘼 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 RYUK 👻👑",
 "𝘽𝙃𝘼𝙂𝙉𝙀 𝙎𝙀 𝙆𝙐𝘾𝙃 𝙉𝙃𝙄 𝙃𝙊𝙂𝘼 🐕❌",
 "𝘽𝙃𝘼𝙂 𝘽𝙃𝘼𝙂 𝙏𝙈𝙆𝘾 😑😹",
 "𝘽𝙃𝘼𝙂𝘼 𝘽𝙃𝘼𝙂𝘼 𝙆𝙀 𝙈𝘼𝙍𝙐𝙉𝙂𝘼 🤣🩷🙌🏾",
@@ -202,9 +203,9 @@ REPLY_RYUK_TEXTS = [
 "𝘽𝙃𝘼𝙂𝙀𝙂𝘼 ❓",
 "𝘽𝙃𝘼𝙂 𝙅𝙇𝘿𝙄 🐕🏳️‍🌈",
 "𝙃𝙇𝙒 𝘾𝙐𝘿𝙂𝙔𝙄 𝙆𝙔𝘼 💀😹",
-"𝘼𝙔𝘼𝙉 𝘼𝘼𝙂𝙔𝘼 👻🔥",
-"𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 𝙀𝙉𝙏𝙍𝙔 👻😂",
-"𝙍𝙀𝙈𝙀𝙈𝘽𝙀𝙍 𝙏𝙃𝙀 𝙂𝙊𝘿 𝙆𝙀𝙉𝙂 𝘼𝙔𝘼𝙉 👻👑"
+"RYUK 𝘼𝘼𝙂𝙔𝘼 👻🔥",
+"𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 RYUK 𝙆𝙄 𝙀𝙉𝙏𝙍𝙔 👻😂",
+"𝙍𝙀𝙈𝙀𝙈𝘽𝙀𝙍 𝙏𝙃𝙀 𝙂𝙊𝘿 𝙆𝙀𝙉𝙂 RYUK 👻👑"
 ]
 
 class LRUCache:
@@ -240,12 +241,12 @@ pfp_tasks = {}
 nc_delays = {}
 spm_delays = {}
 pfp_delays = {}
-REPLY_RYUK_DELAY = 0.2 
+REPLY_MAFI_DELAY = 0.2 
 
 known_chats = set()    
 known_users = set()    
-replyRYUK_targets = set()  
-last_RYUK_reply = {}   
+replymafi_targets = set()  
+last_mafi_reply = {}   
 muted_users = set()    
 active_menus = {} 
 
@@ -524,7 +525,7 @@ async def stopall_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 for t in task_list.values(): t.cancel()
         d.clear()
     swipe_mode.clear()
-    replyRYUK_targets.clear()
+    replymafi_targets.clear()
     await safe_reply(update, "🛑 𝘼𝙡𝙡 𝙤𝙥𝙚𝙧𝙖𝙩𝙞𝙤𝙣𝙨 𝙝𝙖𝙫𝙚 𝙗𝙚𝙚𝙣 𝙩𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙚𝙙 𝙜𝙡𝙤𝙗𝙖𝙡𝙡𝙮.")
 
 @only_sudo
@@ -719,12 +720,12 @@ async def stopvoicespm_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await safe_reply(update, "🛑 𝙑𝙤𝙞𝙘𝙚 𝙎𝙋𝙈 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 AYAN 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
+    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 RYUK 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
 
 @only_sudo
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     help_text = (
-        "𝘼𝙔𝘼𝙉 V1 ❤️‍🔥\n\n"
+        "RYUK V1 ❤️‍🔥\n\n"
         "🤍 𝗡𝗖 (𝗡𝗮𝗺𝗲 𝗖𝗵𝗮𝗻𝗴𝗲)\n"
         "• `/gcnc <text>` : 𝙏𝙚𝙭𝙩 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
         "• `/ncemo <text>` : 𝙀𝙢𝙤𝙟𝙞 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
@@ -758,8 +759,8 @@ async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "• `/stopallspm` : 𝙎𝙩𝙤𝙥 𝘼𝙡𝙡 𝙎𝙥𝙖𝙢𝙨\n"
         "• `/delaygcspm <sec>` : 𝙎𝙥𝙖𝙢 𝘿𝙚𝙡𝙖𝙮\n\n"
         "🥱 𝗥𝗘𝗣𝗟𝗬 𝗠𝗔𝗙𝗜 & 𝗦𝗪𝗜𝗣𝗘\n"
-        "• `/replyryuk` (reply/tag) : 𝘼𝙪𝙩𝙤 𝙄𝙣𝙨𝙪𝙡𝙩 𝙍𝙚𝙥𝙡𝙮\n"
-        "• `/stopreplyryuk` (reply/tag) : 𝙎𝙩𝙤𝙥 𝘼𝙪𝙩𝙤 𝙍𝙚𝙥𝙡𝙮\n"
+        "• `/replymafi` (reply/tag) : 𝘼𝙪𝙩𝙤 𝙄𝙣𝙨𝙪𝙡𝙩 𝙍𝙚𝙥𝙡𝙮\n"
+        "• `/stopreplymafi` (reply/tag) : 𝙎𝙩𝙤𝙥 𝘼𝙪𝙩𝙤 𝙍𝙚𝙥𝙡𝙮\n"
         "• `/swipe <name>` : 𝘼𝙪𝙩𝙤 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n"
         "• `/stopswipe` : 𝙎𝙩𝙤𝙥 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n\n"
         "🤫 𝗠𝗨𝗧𝗘 & 𝗔𝗗𝗠𝗜𝗡\n"
@@ -1022,7 +1023,7 @@ async def stoppyramidnc_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         pyramid_tasks[chat_id] = {}
         await safe_reply(update, "🛑 𝙋𝙮𝙧𝙖𝙢𝙞𝙙 𝙉𝘾 𝙡𝙤𝙤𝙥 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
-# xryuk
+# xmafi
 @only_sudo
 async def targetslide(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message.reply_to_message: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙩𝙤 𝙖 𝙢𝙚𝙨𝙨𝙖𝙜𝙚", parse_mode="Markdown")
@@ -1109,18 +1110,18 @@ async def stopswipe(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await safe_reply(update, "🛑 𝙎𝙬𝙞𝙥𝙚 𝙈𝙤𝙙𝙚 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
 @only_sudo
-async def replyryuk_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def replymafi_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = await get_target_user(update, context)
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
-    replyryuk_targets.add(uid)
+    replymafi_targets.add(uid)
     await safe_reply(update, "💬 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙚𝙣𝙖𝙗𝙡𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 @only_sudo
-async def stopreplyryuk_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def stopreplymafi_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = await get_target_user(update, context)
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
-    replyryuk_targets.discard(uid)
-    last_ryuk_reply.pop(uid, None)
+    replymafi_targets.discard(uid)
+    last_mafi_reply.pop(uid, None)
     await safe_reply(update, "🛑 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙨𝙩𝙤𝙥𝙥𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 async def auto_replies(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1135,14 +1136,14 @@ async def auto_replies(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except Exception: pass
         return 
 
-    if uid in replyryuk_targets and REPLY_ryuk_TEXTS:
+    if uid in replymafi_targets and REPLY_MAFI_TEXTS:
         now_ts = time.time()
         bot_id = context.bot.id
-        user_bot_cooldowns = last_ryuk_reply.setdefault(uid, {})
+        user_bot_cooldowns = last_mafi_reply.setdefault(uid, {})
         
-        if now_ts - user_bot_cooldowns.get(bot_id, 0) >= REPLY_ryuk_DELAY:
+        if now_ts - user_bot_cooldowns.get(bot_id, 0) >= REPLY_MAFI_DELAY:
             user_bot_cooldowns[bot_id] = now_ts + 0.9 
-            try: await update.message.reply_text(random.choice(REPLY_ryuk_TEXTS), reply_to_message_id=update.message.message_id)
+            try: await update.message.reply_text(random.choice(REPLY_MAFI_TEXTS), reply_to_message_id=update.message.message_id)
             except Exception: pass
 
     if update.message.from_user.is_bot: return
@@ -1164,7 +1165,7 @@ async def getlink_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await safe_reply(update, f"❌ 𝙀𝙧𝙧𝙤𝙧: {e}")
 
-# ryuk keng 
+# mafi keng 
 @only_sudo
 async def getallactivelinks_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not known_chats: return await safe_reply(update, "⚠️ 𝙉𝙤 𝙠𝙣𝙤𝙬𝙣 𝙘𝙝𝙖𝙩𝙨 𝙮𝙚𝙩.")
@@ -1226,8 +1227,8 @@ def build_app(token):
     app.add_handler(CommandHandler("delaygcspm", delaygcspm_cmd))
     app.add_handler(CommandHandler("swipe", swipe))
     app.add_handler(CommandHandler("stopswipe", stopswipe))
-    app.add_handler(CommandHandler("replyryuk", replyryuk_cmd))
-    app.add_handler(CommandHandler("stopreplyryuk", stopreplyryuk_cmd))
+    app.add_handler(CommandHandler("replymafi", replymafi_cmd))
+    app.add_handler(CommandHandler("stopreplymafi", stopreplymafi_cmd))
 
     app.add_handler(CommandHandler("save", save_cmd))
     app.add_handler(CommandHandler("del", del_cmd))
@@ -1320,7 +1321,7 @@ async def run_all_bots():
         except Exception as e:
             print(f"❌ Error starting a bot: {e}")
 
-    print("\nryuk V3 STARTED!\n")
+    print("\nMAFI V3 STARTED!\n")
     await asyncio.Event().wait()
 
 if __name__ == "__main__":
@@ -1329,4 +1330,4 @@ if __name__ == "__main__":
     try:
         loop.run_until_complete(run_all_bots())
     except KeyboardInterrupt:
-        print("\n🛑 SHUTTING DOWN ryuk..")
+        print("\n🛑 SHUTTING DOWN MAFIA...")
