@@ -24,9 +24,25 @@ from telegram.ext import (
 from telegram.error import RetryAfter
 
 TOKENS = [
-   "7636069318:AAHtsKs5PMTnM4UO4N2kBd3qOVHyunm_G5I"
+   "8281467228:AAHjqn3nVGecWjZ_T1PUlrYEeiKYLuflMmg",
+   "8464410238:AAF0i2Z_mk7fLR09e7XeoP-eIXmndI2eLCs",
+   "8423707765:AAHIIo84awDGfCNeWbB20iMMDQZ2cE61zJ0",
+   "8034624699:AAHC9KhBDWvnf-SKpxqVkbiXCmWjdh_cXWk",
+   "8198301801:AAFZgOpOukPZZ5ZR8fcDfu7MqHBQS0B6_6I",
+   "8600045271:AAHnnTWMUTOarW4Drft1d2dMpsHKTW2BEsI",
+   "8664661637:AAGmsxRKOFKpz3KQyjWVSgTQ0-PNhDggLdI",
+   "8466935075:AAFthv0TMGdFs6ShQqx61sMdsBgNOv9HjAM",
+   "8759878854:AAH46jl7I3liJtq9orDXUoGA7JfEvHXq7AA",
+   "8507059535:AAGw4Z8OiUljEYBVpcJOMKowqoN5MFGsBCY",
+   "8600809195:AAGHLvkVMJMrU3arDxLjdBYMlQu2oAhTxug",
+   "8397329167:AAFsF5GM18QJJzGheSbhAcqrs2DfefeWWCM",
+   "8696242603:AAEiydZqJYPlbou3T8cvAQsug7W-A4f03U8",
+   "8725530741:AAG9M-7-8xMurxEYRBYZhdEdE7xE-I7yLec",
+   "8756339257:AAGaD68d3SoNr-0A_pnYpgbFk5zLiedu16A",
+   "8756270474:AAHnSAHgwYcwDCAqrV9ZjeDZG7UM36BjLLg",
+   "8682383168:AAE_7u8nvGB1J0IvrUNP4Eoa4g0uW1C7FDs",
+   "8700297166:AAGSqBgOWGn0Zk4uk99R_-lgT4Ii1ug_tgI"
 ]
-
 
 OWNER_ID = 2082618819
 SUDO_FILE = None  
@@ -118,7 +134,7 @@ TARGET_SLIDE_TEXTS = [
 "𝙊𝙔𝙔 {} 𝙏𝘼𝙏𝙏𝙀 𝙈𝙐𝙅𝙀 𝘽𝘼𝘼𝙋 𝘽𝙉𝘼 𝙇𝙀 𝙉𝙔 𝙏𝙊 𝙏𝙀𝙍𝙄 𝙈𝘼 𝙍𝙉𝘿𝙔"
 ]
 
-REPLY_MAFI_TEXTS = [
+REPLY_RYUK_TEXTS = [
     
 "𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙊 𝙏𝙐𝙈𝙃𝘼𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 😑🙌🏾",
 "𝙂𝘼𝘿𝘿𝙃𝘼 𝘿𝙄𝙆𝙃𝘼 𝙆𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘿𝙄𝙆𝙃𝙄 𝘾𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 🙊🤦🏾😂",
@@ -224,12 +240,12 @@ pfp_tasks = {}
 nc_delays = {}
 spm_delays = {}
 pfp_delays = {}
-REPLY_MAFI_DELAY = 0.2 
+REPLY_RYUK_DELAY = 0.2 
 
 known_chats = set()    
 known_users = set()    
-replymafi_targets = set()  
-last_mafi_reply = {}   
+replyRYUK_targets = set()  
+last_RYUK_reply = {}   
 muted_users = set()    
 active_menus = {} 
 
@@ -508,7 +524,7 @@ async def stopall_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 for t in task_list.values(): t.cancel()
         d.clear()
     swipe_mode.clear()
-    replymafi_targets.clear()
+    replyRYUK_targets.clear()
     await safe_reply(update, "🛑 𝘼𝙡𝙡 𝙤𝙥𝙚𝙧𝙖𝙩𝙞𝙤𝙣𝙨 𝙝𝙖𝙫𝙚 𝙗𝙚𝙚𝙣 𝙩𝙚𝙧𝙢𝙞𝙣𝙖𝙩𝙚𝙙 𝙜𝙡𝙤𝙗𝙖𝙡𝙡𝙮.")
 
 @only_sudo
@@ -703,12 +719,12 @@ async def stopvoicespm_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await safe_reply(update, "🛑 𝙑𝙤𝙞𝙘𝙚 𝙎𝙋𝙈 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙈𝙖𝙛𝙞𝙖 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
+    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 AYAN 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
 
 @only_sudo
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     help_text = (
-        "𝘼𝙔𝘼𝙉 𝗡𝗘𝗧𝗪𝗢𝗥𝗞 𝗩3 (𝗨𝗟𝗧𝗜𝗠𝗔𝗧𝗘)❤️‍🔥\n\n"
+        "𝘼𝙔𝘼𝙉 V1 ❤️‍🔥\n\n"
         "🤍 𝗡𝗖 (𝗡𝗮𝗺𝗲 𝗖𝗵𝗮𝗻𝗴𝗲)\n"
         "• `/gcnc <text>` : 𝙏𝙚𝙭𝙩 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
         "• `/ncemo <text>` : 𝙀𝙢𝙤𝙟𝙞 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
@@ -742,8 +758,8 @@ async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "• `/stopallspm` : 𝙎𝙩𝙤𝙥 𝘼𝙡𝙡 𝙎𝙥𝙖𝙢𝙨\n"
         "• `/delaygcspm <sec>` : 𝙎𝙥𝙖𝙢 𝘿𝙚𝙡𝙖𝙮\n\n"
         "🥱 𝗥𝗘𝗣𝗟𝗬 𝗠𝗔𝗙𝗜 & 𝗦𝗪𝗜𝗣𝗘\n"
-        "• `/replymafi` (reply/tag) : 𝘼𝙪𝙩𝙤 𝙄𝙣𝙨𝙪𝙡𝙩 𝙍𝙚𝙥𝙡𝙮\n"
-        "• `/stopreplymafi` (reply/tag) : 𝙎𝙩𝙤𝙥 𝘼𝙪𝙩𝙤 𝙍𝙚𝙥𝙡𝙮\n"
+        "• `/replyryuk` (reply/tag) : 𝘼𝙪𝙩𝙤 𝙄𝙣𝙨𝙪𝙡𝙩 𝙍𝙚𝙥𝙡𝙮\n"
+        "• `/stopreplyryuk` (reply/tag) : 𝙎𝙩𝙤𝙥 𝘼𝙪𝙩𝙤 𝙍𝙚𝙥𝙡𝙮\n"
         "• `/swipe <name>` : 𝘼𝙪𝙩𝙤 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n"
         "• `/stopswipe` : 𝙎𝙩𝙤𝙥 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n\n"
         "🤫 𝗠𝗨𝗧𝗘 & 𝗔𝗗𝗠𝗜𝗡\n"
@@ -1006,7 +1022,7 @@ async def stoppyramidnc_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         pyramid_tasks[chat_id] = {}
         await safe_reply(update, "🛑 𝙋𝙮𝙧𝙖𝙢𝙞𝙙 𝙉𝘾 𝙡𝙤𝙤𝙥 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
-# xmafi
+# xryuk
 @only_sudo
 async def targetslide(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message.reply_to_message: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙩𝙤 𝙖 𝙢𝙚𝙨𝙨𝙖𝙜𝙚", parse_mode="Markdown")
@@ -1093,18 +1109,18 @@ async def stopswipe(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await safe_reply(update, "🛑 𝙎𝙬𝙞𝙥𝙚 𝙈𝙤𝙙𝙚 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
 @only_sudo
-async def replymafi_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def replyryuk_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = await get_target_user(update, context)
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
-    replymafi_targets.add(uid)
+    replyryuk_targets.add(uid)
     await safe_reply(update, "💬 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙚𝙣𝙖𝙗𝙡𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 @only_sudo
-async def stopreplymafi_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def stopreplyryuk_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = await get_target_user(update, context)
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
-    replymafi_targets.discard(uid)
-    last_mafi_reply.pop(uid, None)
+    replyryuk_targets.discard(uid)
+    last_ryuk_reply.pop(uid, None)
     await safe_reply(update, "🛑 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙨𝙩𝙤𝙥𝙥𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 async def auto_replies(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1119,14 +1135,14 @@ async def auto_replies(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except Exception: pass
         return 
 
-    if uid in replymafi_targets and REPLY_MAFI_TEXTS:
+    if uid in replyryuk_targets and REPLY_ryuk_TEXTS:
         now_ts = time.time()
         bot_id = context.bot.id
-        user_bot_cooldowns = last_mafi_reply.setdefault(uid, {})
+        user_bot_cooldowns = last_ryuk_reply.setdefault(uid, {})
         
-        if now_ts - user_bot_cooldowns.get(bot_id, 0) >= REPLY_MAFI_DELAY:
+        if now_ts - user_bot_cooldowns.get(bot_id, 0) >= REPLY_ryuk_DELAY:
             user_bot_cooldowns[bot_id] = now_ts + 0.9 
-            try: await update.message.reply_text(random.choice(REPLY_MAFI_TEXTS), reply_to_message_id=update.message.message_id)
+            try: await update.message.reply_text(random.choice(REPLY_ryuk_TEXTS), reply_to_message_id=update.message.message_id)
             except Exception: pass
 
     if update.message.from_user.is_bot: return
@@ -1148,7 +1164,7 @@ async def getlink_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await safe_reply(update, f"❌ 𝙀𝙧𝙧𝙤𝙧: {e}")
 
-# mafi keng 
+# ryuk keng 
 @only_sudo
 async def getallactivelinks_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not known_chats: return await safe_reply(update, "⚠️ 𝙉𝙤 𝙠𝙣𝙤𝙬𝙣 𝙘𝙝𝙖𝙩𝙨 𝙮𝙚𝙩.")
@@ -1210,8 +1226,8 @@ def build_app(token):
     app.add_handler(CommandHandler("delaygcspm", delaygcspm_cmd))
     app.add_handler(CommandHandler("swipe", swipe))
     app.add_handler(CommandHandler("stopswipe", stopswipe))
-    app.add_handler(CommandHandler("replymafi", replymafi_cmd))
-    app.add_handler(CommandHandler("stopreplymafi", stopreplymafi_cmd))
+    app.add_handler(CommandHandler("replyryuk", replyryuk_cmd))
+    app.add_handler(CommandHandler("stopreplyryuk", stopreplyryuk_cmd))
 
     app.add_handler(CommandHandler("save", save_cmd))
     app.add_handler(CommandHandler("del", del_cmd))
@@ -1304,7 +1320,7 @@ async def run_all_bots():
         except Exception as e:
             print(f"❌ Error starting a bot: {e}")
 
-    print("\nMAFI V3 STARTED!\n")
+    print("\nryuk V3 STARTED!\n")
     await asyncio.Event().wait()
 
 if __name__ == "__main__":
@@ -1313,4 +1329,4 @@ if __name__ == "__main__":
     try:
         loop.run_until_complete(run_all_bots())
     except KeyboardInterrupt:
-        print("\n🛑 SHUTTING DOWN MAFIA...")
+        print("\n🛑 SHUTTING DOWN ryuk..")
