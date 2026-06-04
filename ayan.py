@@ -1284,7 +1284,7 @@ class _HealthHandler(BaseHTTPRequestHandler):
             <html>
             <head>
                 <meta charset="UTF-8">
-                <title>SINISTERS | SX⁷</title>
+                <title>RYUK FUXKSS</title>
 
                 <style>
                     *{
