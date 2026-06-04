@@ -35,7 +35,7 @@ TOKENS = [
 ]
 
 
-OWNER_ID = 8627713739
+OWNER_ID = 2082618819
 SUDO_FILE = None  
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
