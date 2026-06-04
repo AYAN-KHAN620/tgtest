@@ -95,7 +95,7 @@ SWIPE_TEXTS = [
 "NAME ̷C̷H̷U̷D̷K̷E̷ 𝙎𝙋𝘼𝙈 𝐘𝐀𝐇𝐈 𝘼𝙐𝙆𝘼𝙏 𝐇 𝙏𝙀𝙍𝙄 𝐆𝐀𝐑𝐈𝐁 ???? 😹🩵🙌🏼",
 "𝐂𝐏 𝐊𝐀𝐑 NAME 𝙂𝘼𝙍𝙄𝘽 𝐁𝐇𝐀𝐀𝐆 𝙈𝘼𝙏 𝐂𝐇𝐎𝐓𝐄𝐘 ???? 😂🩶🤚🏼",
 "NAME 𝐊𝐈 𝙈𝙐𝙈𝙈𝙔 𝐊𝐎 ̷R̷A̷N̷D̷I̷ 𝘽𝘼𝙉𝘼 𝘿𝙐𝙉𝙂𝘼 𝙃𝙀𝙃𝙀𝙃𝙀 ???? 🤣💖✌🏼",
-"NAME 𝐊𝐄 𝐁𝐀𝐀𝐏 𝘼𝙔𝘼𝙉 𝐘𝐄𝐇 𝐇𝐀𝐈 𝐈𝐍𝐊𝐈 𝐌𝐀𝐀 𝐊𝐄 𝐘𝐀𝐀𝐑 ???? 😆🩶🤚🏼",
+"NAME 𝐊𝐄 𝐁𝐀𝐀𝐏 𝙍𝙔𝙐𝙆 𝐘𝐄𝐇 𝐇𝐀𝐈 𝐈𝐍𝐊𝐈 𝐌𝐀𝐀 𝐊𝐄 𝐘𝐀𝐀𝐑 ???? 😆🩶🤚🏼",
 "𝐊𝐀𝐁𝐀𝐃𝐈 𝙒𝘼𝙇𝙀 NAME 𝐊𝐈 𝙈𝙆𝘽 ???? 🤣👻💗",
 "𝐀𝐑𝐄𝐘 NAME 𝐊𝐈 𝙈𝙆𝘽 𝙔𝘼𝘼𝙍 𝐁𝐇𝐀𝐆 𝙆𝘼𝙄𝙎𝙀 𝐑𝐇𝐄 𝐇𝐎 𝙂𝘼𝙍𝙄𝘽𝙊 ???? 😤👻💞",
 "𝘼𝙍𝙀𝙔 NAME 𝙈𝘼𝘾𝘾𝙃𝘼𝙍 𝙏𝙈𝙆𝘾 ???? 😂🩷✌🏾",
@@ -127,9 +127,9 @@ TARGET_SLIDE_TEXTS = [
 
 REPLY_RYUK_TEXTS = [
     
-"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙊 𝙏𝙐𝙈𝙃𝘼𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 😑🙌🏾",
+"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙊 𝙏𝙐𝙈𝙃𝘼𝙍𝙀 𝘽𝘼𝘼𝙋 𝙍𝙔𝙐𝙆 𝙆𝙄 😑🙌🏾",
 "𝙂𝘼𝘿𝘿𝙃𝘼 𝘿𝙄𝙆𝙃𝘼 𝙆𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘿𝙄𝙆𝙃𝙄 𝘾𝙃𝙊𝘿 𝘿𝙄𝙔𝘼 🙊🤦🏾😂",
-"𝘼𝙔𝘼𝙉 𝘽𝘿𝙈𝙊𝙎𝙃 𝙎𝙋𝙀𝘼𝙆𝙄𝙉𝙂 𝙁𝙍𝙊𝙈 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽🤦🏾☎️ ",
+"𝙍𝙔𝙐𝙆 𝘽𝘿𝙈𝙊𝙎𝙃 𝙎𝙋𝙀𝘼𝙆𝙄𝙉𝙂 𝙁𝙍𝙊𝙈 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽🤦🏾☎️ ",
 "𝘾𝙐𝘿𝙉𝘼 𝙈𝙉𝘼 𝙃𝘼𝙄 😩🤟🏻",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙊𝘿 𝙆𝙀 𝙈𝘼𝙍 𝘿𝙐𝙉𝙂𝘼 🤣🖕🏾",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙐𝘿 𝙍𝙃𝙄 𝙃𝘼𝙄 𝙉𝘼𝘾𝙃𝙊 👻🕺",
@@ -139,18 +139,18 @@ REPLY_RYUK_TEXTS = [
 "𝙌 ❓🤨",
 "𝘾𝙐𝘿 𝙆𝙀 𝙈𝙍𝙂𝙔𝘼 𝙆𝙔𝘼 💀😹",
 "𝙃𝙇𝙒 𝙋𝙂𝙇 𝘽𝙃𝘼𝙂 𝙈𝙏 🏃‍♂️💨",
-"𝘼𝙔𝘼𝙉 𝘾𝙃𝙊𝘿 𝙍𝙃𝘼 𝙃𝘼𝙄 👻🔥",
+"𝙍𝙔𝙐𝙆 𝘾𝙃𝙊𝘿 𝙍𝙃𝘼 𝙃𝘼𝙄 👻🔥",
 "𝘾𝙔𝘼?",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 ❓",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝘿𝙐 ❓",
 "𝙃𝙀𝙇𝙋 𝙃𝙀𝙇𝙋 𝙈𝙏 𝙆𝙍 𝘾𝙊𝙏𝙐 😩👍🏾",
-"𝙋𝙐𝙅𝘼 𝙆𝙍 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 🙏🏾🔥🙏🏾🔥🙏🏾🔥🙏🏾🔥",
+"𝙋𝙐𝙅𝘼 𝙆𝙍 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝙍𝙔𝙐𝙆 𝙆𝙄 🙏🏾🔥🙏🏾🔥🙏🏾🔥🙏🏾🔥",
 "𝙃𝙇𝙒 𝙃𝙇𝙒 𝙃𝘼𝙈𝙇𝘼 𝙃𝙊𝙂𝙔𝘼 𝙏𝙀𝙍𝙄 𝙈𝙆𝘽 𝙈𝙀 😱😂",
 "𝙏𝙀𝙍𝙄 𝘽𝙆𝘾 𝙈𝙀 𝘽𝙄𝙂𝘽𝙊𝙎𝙎 📺😆",
 "𝙃𝙇𝙒 𝙍𝙀𝙋𝙇𝙔 𝙁𝘼𝙎𝙏 ",
 "𝙁𝘼𝙎𝙏 𝙏𝙔𝙋𝙀 𝙆𝙍 𝘿𝘼𝙍 𝙈𝙏 😤⌨️",
 "𝙃𝙀𝙇𝙋 𝙃𝙀𝙇𝙋 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘾𝙃𝙐𝘿 𝙂𝙔𝙄 😩",
-"𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝙋𝙀𝙇 𝙍𝙃𝙀 𝙃𝘼𝙄 👻💪",
+"𝙍𝙔𝙐𝙆 𝘼𝘽𝘽𝙐 𝙋𝙀𝙇 𝙍𝙃𝙀 𝙃𝘼𝙄 👻💪",
 "𝙃𝙔 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝙍 𝙂𝙔𝙄 𝙆𝙔𝘼 😶💔",
 "𝘼𝙒𝙒 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙆𝙊 𝙋𝙊𝙊𝙆𝙄𝙀 𝘽𝙉𝘼𝙆𝙀 𝙈𝘼𝙍𝙐𝙉𝙂𝘼 🤣🎀",
 "𝙆𝙔𝘼 ❓😑",
@@ -159,15 +159,15 @@ REPLY_RYUK_TEXTS = [
 "𝙏𝘼𝙆𝙀 𝙔𝙊𝙐𝙍 𝙏𝙄𝙈𝙀 𝙁𝙄𝙍 𝘾𝙐𝘿 😉✌🏾😉✌🏾😉✌🏾",
 "𝙃𝙇𝙒 𝙆𝙐𝙏𝙄𝙔𝘼 𝙆𝙀 𝙇𝙍𝙆𝙀 🐶😆",
 "𝙃𝙇𝙒 𝙃𝙇𝙒 𝙈𝙅𝘼 𝘼𝘼𝙍𝙃𝘼 𝘾𝙐𝘿𝙉𝙀 𝙈𝙀 😜🔥",
-"𝘼𝙔𝘼𝙉 𝙂𝙉𝘿 𝙈𝘼𝘼𝙍 𝙍𝙃𝙀 𝙃𝘼𝙄 👻",
+"𝙍𝙔𝙐𝙆 𝙂𝙉𝘿 𝙈𝘼𝘼𝙍 𝙍𝙃𝙀 𝙃𝘼𝙄 👻",
 "𝙃𝙔 𝘾𝙊𝙏𝙐 𝘽𝙃𝙂 𝙈𝙏 𝙍𝙉𝘿𝙔 𝙆𝙀 🔥😑👍🏾",
 "𝘽𝙃𝘼𝙂𝙉𝘼 𝙈𝘼𝙉𝘼 𝙃𝘼𝙄 𝙅𝙄 🚫😎",
-"𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝘼𝘼𝙂𝙔𝙀 🤣🩷🙌🏾",
+"𝙍𝙔𝙐𝙆 𝘼𝘽𝘽𝙐 𝘼𝘼𝙂𝙔𝙀 🤣🩷🙌🏾",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝘼𝙍𝙆𝙀 𝙈𝙅𝘿𝙐𝙍𝙄 𝙆𝙃𝙏𝙈 👍🏾👍🏾👍🏾👍🏾👍🏾",
-"𝙆𝙔𝘼 𝘼𝙔𝘼𝙉 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝙃𝘼𝙄 👻❓",
-"𝙆𝙔𝘼 𝙈𝙏𝙇𝘽 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝘼𝙔𝘼𝙉 𝙉𝙀 𝘾𝙊𝘿𝙄 😹🖕🏾😹🖕🏾💔",
+"𝙆𝙔𝘼 𝙍𝙔𝙐𝙆 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝙃𝘼𝙄 👻❓",
+"𝙆𝙔𝘼 𝙈𝙏𝙇𝘽 𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙍𝙔𝙐𝙆 𝙉𝙀 𝘾𝙊𝘿𝙄 😹🖕🏾😹🖕🏾💔",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 𝘽𝙃𝘼𝙂 𝙅𝘼𝙐𝙉𝙂𝘼 🙋🏾🤪",
-"𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 𝘼𝙔𝘼𝙉 𝘽𝙃𝘼𝙂 𝙂𝙔𝘼 🤦🏾💔",
+"𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙈𝘼𝙍𝙆𝙀 𝙍𝙔𝙐𝙆 𝘽𝙃𝘼𝙂 𝙂𝙔𝘼 🤦🏾💔",
 "𝘽𝙃𝘼𝙂 𝙌 𝙍𝙃𝘼 𝙃𝘼𝙄 ❓",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙈𝙐𝙈𝘽𝘼𝙄 𝙈𝙀 𝘾𝙐𝘿𝙀𝙂𝙄 😌🩷🙌🏾",
 "𝙏𝙔𝙋𝙀 𝙆𝙍 𝙉𝘼 𝘼𝘽 𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝙆𝙀 𝙎𝘼𝙈𝙉𝙀 ⁉️",
@@ -178,13 +178,13 @@ REPLY_RYUK_TEXTS = [
 "𝙄𝘿𝙃𝙍 𝘼𝙅𝘼 𝘾𝙃𝙊𝙏𝙀𝙔 👶🍼",
 "𝘽𝙃𝘼𝙂 𝙈𝙏 𝙆𝙐𝙏𝙏𝙄 𝙆𝙀 🙊😂",
 "𝙏𝙀𝙍𝙄 𝙈𝘼𝘼 𝙆𝙊 𝘽𝙀𝙉10 𝙈𝙀 𝘾𝙊𝘿𝙐𝙉𝙂𝘼 👽😱",
-"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙀𝙂𝘼 𝘼𝘼𝙅𝙎𝙀 𝘼𝙔𝘼𝙉 𝘼𝘽𝘽𝙐 𝙆𝙄 😂🤟🏻😂🤟🏻",
+"𝙄𝙕𝙕𝘼𝙏 𝙆𝙍𝙀𝙂𝘼 𝘼𝘼𝙅𝙎𝙀 𝙍𝙔𝙐𝙆 𝘼𝘽𝘽𝙐 𝙆𝙄 😂🤟🏻😂🤟🏻",
 "𝙏𝙀𝙍𝙄 𝘽𝙃𝙀𝙉 𝙆𝙄 𝙋𝙊𝙊𝙆𝙄𝙀 𝙂𝙓𝙉𝘿 𝙈𝙀 𝙇𝙐𝙉 🎀",
 "𝘽𝙃𝘼𝙂 𝙈𝙏 𝘽𝙀𝙏𝙀 😑🙌🏾😑🙌🏾",
 "𝙄𝘿𝙃𝙍 𝘼𝙅𝘼 𝙇𝘼𝘿𝙇𝙀 😉❤️",
 "𝙏𝙀𝙍𝙄 𝙂𝙀𝙉𝘿 𝙈𝙀 100 𝙃𝘼𝙏𝙃 💯🔥",
 "𝙆𝙍 𝘼𝘽 𝙃𝘼𝙒𝘼𝘽𝘼𝘼𝙕𝙄?",
-"𝙇𝙀 𝘼𝘼𝙂𝙔𝘼 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 👻👑",
+"𝙇𝙀 𝘼𝘼𝙂𝙔𝘼 𝙏𝙀𝙍𝘼 𝘽𝘼𝘼𝙋 𝙍𝙔𝙐𝙆 👻👑",
 "𝘽𝙃𝘼𝙂𝙉𝙀 𝙎𝙀 𝙆𝙐𝘾𝙃 𝙉𝙃𝙄 𝙃𝙊𝙂𝘼 🐕❌",
 "𝘽𝙃𝘼𝙂 𝘽𝙃𝘼𝙂 𝙏𝙈𝙆𝘾 😑😹",
 "𝘽𝙃𝘼𝙂𝘼 𝘽𝙃𝘼𝙂𝘼 𝙆𝙀 𝙈𝘼𝙍𝙐𝙉𝙂𝘼 🤣🩷🙌🏾",
@@ -193,9 +193,9 @@ REPLY_RYUK_TEXTS = [
 "𝘽𝙃𝘼𝙂𝙀𝙂𝘼 ❓",
 "𝘽𝙃𝘼𝙂 𝙅𝙇𝘿𝙄 🐕🏳️‍🌈",
 "𝙃𝙇𝙒 𝘾𝙐𝘿𝙂𝙔𝙄 𝙆𝙔𝘼 💀😹",
-"𝘼𝙔𝘼𝙉 𝘼𝘼𝙂𝙔𝘼 👻🔥",
-"𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝘼𝙔𝘼𝙉 𝙆𝙄 𝙀𝙉𝙏𝙍𝙔 👻😂",
-"𝙍𝙀𝙈𝙀𝙈𝘽𝙀𝙍 𝙏𝙃𝙀 𝙂𝙊𝘿 𝙆𝙀𝙉𝙂 𝘼𝙔𝘼𝙉 👻👑"
+"𝙍𝙔𝙐𝙆 𝘼𝘼𝙂𝙔𝘼 👻🔥",
+"𝙏𝙀𝙍𝙀 𝘽𝘼𝘼𝙋 𝙍𝙔𝙐𝙆 𝙆𝙄 𝙀𝙉𝙏𝙍𝙔 👻😂",
+"𝙍𝙀𝙈𝙀𝙈𝘽𝙀𝙍 𝙏𝙃𝙀 𝙂𝙊𝘿 𝙆𝙀𝙉𝙂 𝙍𝙔𝙐𝙆 👻👑"
 ]
 
 class LRUCache:
@@ -712,66 +712,86 @@ async def stopvoicespm_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 RYUK 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
 
+
 @only_sudo
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    help_text = (
-        "RYUK V1 ❤️‍🔥\n\n"
-        "🤍 𝗡𝗖 (𝗡𝗮𝗺𝗲 𝗖𝗵𝗮𝗻𝗴𝗲)\n"
-        "• `/gcnc <text>` : 𝙏𝙚𝙭𝙩 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
-        "• `/ncemo <text>` : 𝙀𝙢𝙤𝙟𝙞 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
-        "• `/pyramidnc <name>` : 𝙋𝙮𝙧𝙖𝙢𝙞𝙙 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
-        "• `/stopgcnc` : 𝙎𝙩𝙤𝙥 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚\n"
-        "• `/stoppyramidnc` : 𝙎𝙩𝙤𝙥 𝙋𝙮𝙧𝙖𝙢𝙞𝙙\n"
-        "• `/delaync <sec>` : 𝙉𝙖𝙢𝙚 𝘾𝙝𝙖𝙣𝙜𝙚 𝘿𝙚𝙡𝙖𝙮\n\n"
-        "📸 𝗣𝗙𝗣 & 𝗠𝗘𝗗𝗜𝗔 𝗦𝗣𝗔𝗠\n"
-        "• `/save` (reply) : 𝙎𝙖𝙫𝙚 𝙂𝙧𝙤𝙪𝙥 𝙋𝙁𝙋\n"
-        "• `/del` (reply) : 𝘿𝙚𝙡𝙚𝙩𝙚 𝙂𝙧𝙤𝙪𝙥 𝙋𝙁𝙋\n"
-        "• `/gsave` (reply) : 𝙎𝙖𝙫𝙚 𝙂𝙡𝙤𝙗𝙖𝙡 𝙋𝙁𝙋\n"
-        "• `/gpfp` : 𝙂𝙡𝙤𝙗𝙖𝙡 𝙋𝙁𝙋 𝙐𝙥𝙙𝙖𝙩𝙚\n"
-        "• `/pfp` : 𝙋𝙁𝙋 𝙇𝙤𝙤𝙥 𝙈𝙚𝙣𝙪\n"
-        "• `/stoppfp` : 𝙎𝙩𝙤𝙥 𝙋𝙁𝙋 𝙇𝙤𝙤𝙥\n"
-        "• `/delaypfp <sec>` : 𝙋𝙁𝙋 𝘿𝙚𝙡𝙖𝙮\n"
-        "• `/stickerspm` (reply) : 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙎𝙥𝙖𝙢\n"
-        "• `/stopstickerspm` : 𝙎𝙩𝙤𝙥 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙎𝙥𝙖𝙢\n"
-        "• `/gifspm` (reply) : 𝙂𝙄𝙁 𝙎𝙥𝙖𝙢\n"
-        "• `/stopgifspm` : 𝙎𝙩𝙤𝙥 𝙂𝙄𝙁 𝙎𝙥𝙖𝙢\n"
-        "• `/mediaspm` (reply) : 𝙋𝙝𝙤𝙩𝙤/𝙑𝙞𝙙𝙚𝙤 𝙎𝙥𝙖𝙢\n"
-        "• `/stopmediaspm` : 𝙎𝙩𝙤𝙥 𝙈𝙚𝙙𝙞𝙖 𝙎𝙥𝙖𝙢\n"
-        "• `/voicespm` (reply) : 𝙑𝙤𝙞𝙘𝙚 𝙎𝙥𝙖𝙢\n"
-        "• `/stopvoicespm` : 𝙎𝙩𝙤𝙥 𝙑𝙤𝙞𝙘𝙚 𝙎𝙥𝙖𝙢\n\n"
-        "💦 𝗦𝗟𝗜𝗗𝗘 & 𝗦𝗣𝗔𝗠\n"
-        "• `/targetslide <name>` (reply) : 𝙏𝙖𝙧𝙜𝙚𝙩 𝙎𝙡𝙞𝙙𝙚\n"
-        "• `/stoptargetslide` : 𝙎𝙩𝙤𝙥 𝙏𝙖𝙧𝙜𝙚𝙩 𝙎𝙡𝙞𝙙𝙚\n"
-        "• `/slidespam <text>` (reply) : 𝙏𝙖𝙧𝙜𝙚𝙩 𝙇𝙤𝙘𝙠 𝙎𝙥𝙖𝙢\n"
-        "• `/stopslidespam` : 𝙎𝙩𝙤𝙥 𝙏𝙖𝙧𝙜𝙚𝙩 𝙇𝙤𝙘𝙠\n"
-        "• `/spm <text>` : 𝙎𝙥𝙖𝙢 𝙇𝙤𝙤𝙥\n"
-        "• `/stopspm` : 𝙎𝙩𝙤𝙥 𝙎𝙥𝙖𝙢 𝙇𝙤𝙤𝙥\n"
-        "• `/stopallspm` : 𝙎𝙩𝙤𝙥 𝘼𝙡𝙡 𝙎𝙥𝙖𝙢𝙨\n"
-        "• `/delaygcspm <sec>` : 𝙎𝙥𝙖𝙢 𝘿𝙚𝙡𝙖𝙮\n\n"
-        "🥱 𝗥𝗘𝗣𝗟𝗬 RYUK & 𝗦𝗪𝗜𝗣𝗘\n"
-        "• `/replyRYUK` (reply/tag) : 𝘼𝙪𝙩𝙤 𝙄𝙣𝙨𝙪𝙡𝙩 𝙍𝙚𝙥𝙡𝙮\n"
-        "• `/stopreplyRYUK` (reply/tag) : 𝙎𝙩𝙤𝙥 𝘼𝙪𝙩𝙤 𝙍𝙚𝙥𝙡𝙮\n"
-        "• `/swipe <name>` : 𝘼𝙪𝙩𝙤 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n"
-        "• `/stopswipe` : 𝙎𝙩𝙤𝙥 𝙉𝙖𝙢𝙚 𝙍𝙚𝙥𝙡𝙖𝙘𝙚\n\n"
-        "🤫 𝗠𝗨𝗧𝗘 & 𝗔𝗗𝗠𝗜𝗡\n"
-        "• `/mute` (reply/tag) : 𝙈𝙪𝙩𝙚 𝙐𝙨𝙚𝙧\n"
-        "• `/unmute` (reply/tag) : 𝙐𝙣𝙢𝙪𝙩𝙚 𝙐𝙨𝙚𝙧\n"
-        "• `/mutelist` : 𝙈𝙪𝙩𝙚𝙙 𝙐𝙨𝙚𝙧𝙨 𝙇𝙞𝙨𝙩\n"
-        "• `/promoteall` : 𝙋𝙧𝙤𝙢𝙤𝙩𝙚 𝘼𝙡𝙡 𝙐𝙨𝙚𝙧𝙨\n"
-        "• `/promoteallbots` : 𝙋𝙧𝙤𝙢𝙤𝙩𝙚 𝘼𝙡𝙡 𝘽𝙤𝙩𝙨\n"
-        "• `/addsudo` (reply/tag) : 𝘼𝙙𝙙 𝙎𝙪𝙙𝙤 𝙐𝙨𝙚𝙧\n"
-        "• `/delsudo` (reply/tag) : 𝙍𝙚𝙢𝙤𝙫𝙚 𝙎𝙪𝙙𝙤\n"
-        "• `/listsudo` : 𝙎𝙪𝙙𝙤 𝙐𝙨𝙚𝙧𝙨 𝙇𝙞𝙨𝙩\n\n"
-        "😆 𝗠𝗜𝗦𝗖𝗘𝗟𝗟𝗔𝗡𝗘𝗢𝗨𝗦\n"
-        "• `/stopall` : 𝙎𝙩𝙤𝙥 𝘼𝙡𝙡 𝙏𝙖𝙨𝙠𝙨 (𝙊𝙬𝙣𝙚𝙧)\n"
-        "• `/o` : 𝙊𝙥𝙩𝙞𝙢𝙞𝙯𝙚 & 𝘾𝙡𝙚𝙖𝙧 𝘾𝙖𝙘𝙝𝙚\n"
-        "• `/activebots` : 𝘼𝙘𝙩𝙞𝙫𝙚 𝘽𝙤𝙩𝙨 𝙎𝙩𝙖𝙩𝙪𝙨\n"
-        "• `/leave` : 𝘼𝙡𝙡 𝘽𝙤𝙩𝙨 𝙇𝙚𝙖𝙫𝙚 𝙂𝙧𝙤𝙪𝙥\n"
-        "• `/missingbots` : 𝘾𝙝𝙚𝙘𝙠 𝙈𝙞𝙨𝙨𝙞𝙣𝙜 𝘽𝙤𝙩𝙨\n"
-        "• `/getallactivelinks` : 𝙂𝙚𝙩 𝙂𝙧𝙤𝙪𝙥 𝙇𝙞𝙣𝙠𝙨\n"
-        "• `/ping` : 𝘽𝙤𝙩 𝙋𝙞𝙣𝙜 𝙎𝙩𝙖𝙩𝙪𝙨"
-    )
-    await safe_reply(update, help_text, parse_mode="Markdown")
+    HELP_TEXT = """
+⋅ ⋅╭───── ⋅ ⋅ ──── ⋅ ⋅ ───𓆩ᥫ᭡𓆪─╮⋅ ⋅
+               👑 𝗥𝗬𝗨𝗞 𝗙𝗨𝗫𝗞𝗦𝗦 👑
+⋅ ⋅╰──𓆩ᥫ᭡𓆪─── ⋅ ⋅ ───── ⋅ ⋅ ───╯⋅ ⋅
+
+               𓆩 𝗦𝗣𝗔𝗠 & 𝗦𝗟𝗜𝗗𝗘 ⃝ ♥️𓆪
+
+➤ /targetslide <name> (reply)
+➤ /stoptargetslide
+➤ /slidespam <text> (reply)
+➤ /stopslidespam
+➤ /spm <text>
+➤ /stopspm
+➤ /stopallspm
+➤ /delaygcspm <sec>
+
+                    𓆩 𝗥𝗘𝗡𝗔𝗠𝗘 ⃝ ♥️𓆪
+
+➤ /gcnc <text>
+➤ /ncemo <text>
+➤ /pyramidnc <name>
+➤ /stopgcnc
+➤ /stoppyramidnc
+➤ /delaync <sec>
+
+                𓆩 𝗣𝗙𝗣 & 𝗠𝗘𝗗𝗜𝗔 ⃝ ♥️𓆪
+
+➤ /save (reply)
+➤ /del (reply)
+➤ /gsave (reply)
+➤ /gpfp
+➤ /pfp
+➤ /stoppfp
+➤ /delaypfp <sec>
+➤ /stickerspm (reply)
+➤ /stopstickerspm
+➤ /gifspm (reply)
+➤ /stopgifspm
+➤ /mediaspm (reply)
+➤ /stopmediaspm
+➤ /voicespm (reply)
+➤ /stopvoicespm
+
+                        𓆩 𝗥𝗬𝗨𝗞 ⃝ ♥️𓆪
+
+➤ /replyRYUK (reply/tag)
+➤ /stopreplyRYUK (reply/tag)
+➤ /swipe <name>
+➤ /stopswipe
+
+                     𓆩 𝗦𝗨𝗗𝗢 ⃝ ♥️𓆪
+
+➤ /addsudo (reply/tag)
+➤ /delsudo (reply/tag)
+➤ /listsudo
+
+                    𓆩 𝗔𝗗𝗠𝗜𝗡 ⃝ ♥️𓆪
+
+➤ /mute (reply/tag)
+➤ /unmute (reply/tag)
+➤ /mutelist
+➤ /promoteall
+➤ /promoteallbots
+
+                    𓆩 𝗦𝗬𝗦𝗧𝗘𝗠 ⃝ ♥️𓆪
+
+➤ /activebots
+➤ /missingbots
+➤ /getallactivelinks
+➤ /ping
+➤ /o
+➤ /optimize
+➤ /leave
+➤ /stopall
+
+"""
+    await safe_reply(update, HELP_TEXT)
 
 @only_sudo
 async def activebots(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1104,7 +1124,7 @@ async def replyRYUK_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = await get_target_user(update, context)
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
     replyRYUK_targets.add(uid)
-    await safe_reply(update, "💬 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙚𝙣𝙖𝙗𝙡𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
+    await safe_reply(update, "💬 𝙍𝙚𝙥𝙡𝙮𝙍𝙔𝙐𝙆 𝙚𝙣𝙖𝙗𝙡𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 @only_sudo
 async def stopreplyRYUK_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1112,7 +1132,7 @@ async def stopreplyRYUK_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not uid: return await safe_reply(update, "⚠️ 𝙍𝙚𝙥𝙡𝙮 𝙤𝙧 𝙩𝙖𝙜 𝙖 𝙪𝙨𝙚𝙧", parse_mode="Markdown")
     replyRYUK_targets.discard(uid)
     last_RYUK_reply.pop(uid, None)
-    await safe_reply(update, "🛑 𝙍𝙚𝙥𝙡𝙮𝙈𝙖𝙛𝙞 𝙨𝙩𝙤𝙥𝙥𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
+    await safe_reply(update, "🛑 𝙍𝙚𝙥𝙡𝙮𝙍𝙔𝙐𝙆 𝙨𝙩𝙤𝙥𝙥𝙚𝙙 𝙛𝙤𝙧 𝙩𝙝𝙞𝙨 𝙪𝙨𝙚𝙧.")
 
 async def auto_replies(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.from_user: return
@@ -1321,7 +1341,7 @@ class _HealthHandler(BaseHTTPRequestHandler):
             <body>
 
                 <div class="title">
-                    SINISTERS | SX⁷
+                    RYUK FUXKSS⁷
                 </div>
 
                 <div class="subtitle">
