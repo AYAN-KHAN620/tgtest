@@ -710,7 +710,7 @@ async def stopvoicespm_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await safe_reply(update, "🛑 𝙑𝙤𝙞𝙘𝙚 𝙎𝙋𝙈 𝙨𝙩𝙤𝙥𝙥𝙚𝙙.")
 
 async def start_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 AYAN 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
+    await safe_reply(update, "💗 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 RYUK 𝘽𝙤𝙩!\n✨ 𝙐𝙨𝙚 `/help` 𝙩𝙤 𝙨𝙚𝙚 𝙖𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨.", parse_mode="Markdown")
 
 @only_sudo
 async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1260,46 +1260,92 @@ class _HealthHandler(BaseHTTPRequestHandler):
         if self.path in ["/", "/health"]:
 
             html = """
+            <!DOCTYPE html>
             <html>
             <head>
-                <title>Bot Health</title>
+                <meta charset="UTF-8">
+                <title>SINISTERS | SX⁷</title>
+
                 <style>
-                    body {
-                        background:#0f0f0f;
+                    *{
+                        margin:0;
+                        padding:0;
+                        box-sizing:border-box;
+                    }
+
+                    body{
+                        background:#050505;
                         color:white;
                         font-family:Arial,sans-serif;
-                        padding:20px;
+                        padding:25px;
                     }
-                    .bot {
-                        margin:10px 0;
-                        padding:12px;
-                        background:#1a1a1a;
-                        border-radius:10px;
+
+                    .title{
+                        font-size:32px;
+                        font-weight:900;
+                        color:#00ff66;
+                        margin-bottom:8px;
+                        text-shadow:0 0 15px #00ff66;
                     }
-                    .active {
+
+                    .subtitle{
+                        color:#aaa;
+                        margin-bottom:25px;
+                        font-size:15px;
+                    }
+
+                    .bot{
+                        background:#111;
+                        border:1px solid #1f1f1f;
+                        padding:15px;
+                        border-radius:12px;
+                        margin-bottom:12px;
+                        display:flex;
+                        justify-content:space-between;
+                        align-items:center;
+                    }
+
+                    .name{
+                        font-size:18px;
+                        font-weight:bold;
+                    }
+
+                    .active{
                         color:#00ff66;
                         font-weight:bold;
+                        font-size:16px;
                     }
                 </style>
             </head>
+
             <body>
-                <h2>🤖 Active Bots</h2>
+
+                <div class="title">
+                    SINISTERS | SX⁷
+                </div>
+
+                <div class="subtitle">
+                    Active Bots
+                </div>
             """
 
             for username in bot_usernames:
                 html += f'''
                 <div class="bot">
-                    @{username}
-                    <span class="active">● ACTIVE</span>
+                    <div class="name">@{username}</div>
+                    <div class="active">● ACTIVE</div>
                 </div>
                 '''
 
-            html += "</body></html>"
+            html += """
+            </body>
+            </html>
+            """
 
             self.send_response(200)
-            self.send_header("Content-type", "text/html")
+            self.send_header("Content-type", "text/html; charset=utf-8")
             self.end_headers()
-            self.wfile.write(html.encode())
+            self.wfile.write(html.encode("utf-8"))
 
         else:
             self.send_response(404)
