@@ -36,8 +36,12 @@ ncspam_emojis = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🖤", "🤍
 BOT_TOKENS = []
 
 for k, v in os.environ.items():
-    if k.isdigit():
-        BOT_TOKENS.append((int(k), v))
+    if k.startswith("BOT_"):
+        try:
+            num = int(k.split("_")[1])
+            BOT_TOKENS.append((num, v))
+        except:
+            pass
 
 BOT_TOKENS = [token for _, token in sorted(BOT_TOKENS)]
 
