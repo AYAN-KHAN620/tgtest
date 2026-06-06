@@ -911,7 +911,7 @@ async def listsudo(update, context):
 
 
 async def ready(update, context):
-    await update.message.reply_text("❤️‍🔥 𝗔𝗟𝗘𝗫 𝗕𝗢𝗧 𝗥𝗘𝗔𝗗𝗬 𝗧𝗢 𝗙𝗨𝗖𝗞 💥\n\n😈 Lᴇᴛ's Bᴇɢɪɴ...")
+    await update.message.reply_text("❤️‍🔥 𝗗𝗔𝗞𝗦𝗛 𝗕𝗢𝗧 𝗥𝗘𝗔𝗗𝗬 𝗧𝗢 𝗙𝗨𝗖𝗞 💥\n\n😈 Lᴇᴛ's Bᴇɢɪɴ...")
 
 async def ping(update, context):
     start = time.time()
