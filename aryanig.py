@@ -43,6 +43,21 @@ session_logs = {
 }
 logs_lock = threading.Lock()
 
+account_stats = {
+    f"acc{i}": {
+        "username": f"acc{i}",
+        "online": False,
+        "messages_sent": 0,
+        "failed_messages": 0,
+        "graphql_renamed": 0,
+        "failed_graphql": 0,
+        "current_thread": "-",
+        "rename_graph": [],
+        "start_time": time.time()
+    }
+    for i in range(1, 7)
+}
+
 def _push_log(session, msg):
     if session not in session_logs:
         session = "system"
@@ -99,6 +114,352 @@ def status():
         "system_last": system_last
     })
 
+from flask import render_template_string
+
+SCRIPT_START_TIME = time.time()
+
+@app.route("/dashboard")
+def dashboard():
+
+    runtime = int(time.time() - SCRIPT_START_TIME)
+
+    hours = runtime // 3600
+    minutes = (runtime % 3600) // 60
+    seconds = runtime % 60
+
+    total_runtime = f"{hours:02d}h {minutes:02d}m {seconds:02d}s"
+
+    sessions = [
+        SESSION_ID_1,
+        SESSION_ID_2,
+        SESSION_ID_3,
+        SESSION_ID_4,
+        SESSION_ID_5,
+        SESSION_ID_6,
+    ]
+
+    cards = []
+
+    for i, sid in enumerate(sessions, 1):
+
+        if not sid:
+            continue
+
+        acc = f"acc{i}"
+        s = account_stats[acc]
+
+        cards.append({
+            "username": s["username"],
+            "session": acc,
+            "online": s["online"],
+            "messages": s["messages_sent"],
+            "failed": s["failed_messages"],
+            "renamed": s["graphql_renamed"],
+            "failedrename": s["failed_graphql"],
+            "thread": s["current_thread"],
+            "graph": ",".join(map(str, s["rename_graph"]))
+        })
+
+    return render_template_string("""
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="2">
+
+<title>SINISTERS ⚡ SX⁷</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+padding:35px;
+background:#050505;
+font-family:Arial,Helvetica,sans-serif;
+color:white;
+}
+
+.header{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:2px solid cyan;
+border-radius:22px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 18px cyan,0 0 45px cyan;
+margin-bottom:35px;
+animation:glow 2s infinite alternate;
+}
+
+.title{
+font-size:42px;
+font-weight:bold;
+color:#00ffff;
+}
+
+.runtime{
+margin-top:15px;
+font-size:18px;
+color:#8cfbff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+gap:24px;
+}
+
+.card{
+background:#111111;
+border:2px solid cyan;
+border-radius:20px;
+padding:22px;
+transition:.3s;
+box-shadow:0 0 15px cyan,0 0 35px cyan;
+backdrop-filter:blur(10px);
+}
+
+.card:hover{
+box-shadow:0 0 25px cyan,0 0 60px cyan;
+transform:translateY(-3px);
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.badge{
+padding:6px 15px;
+border:1px solid cyan;
+border-radius:12px;
+color:#00ffff;
+box-shadow:0 0 10px cyan;
+}
+
+.session{
+font-size:13px;
+opacity:.7;
+margin-top:4px;
+}
+
+.stat{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+font-size:17px;
+}
+
+canvas{
+margin-top:20px;
+height:120px!important;
+}
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px cyan;
+}
+
+to{
+text-shadow:0 0 30px cyan;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="title">
+
+SINISTERS ⚡ SX⁷
+
+</div>
+
+<div class="runtime">
+
+RUNTIME ⌛ {{total_runtime}}
+
+</div>
+
+</div>
+
+<div class="grid">
+
+{% for c in cards %}
+
+<div class="card">
+
+<div class="top">
+
+<div>
+
+{% if c.online %}
+
+🟢 Online
+
+{% else %}
+
+🔴 Offline
+
+{% endif %}
+
+<div class="session">
+
+{{c.session}}
+
+</div>
+
+</div>
+
+<div class="badge">
+
+{{c.username}}
+
+</div>
+
+</div>
+
+<div class="stat">
+
+<span>Messages Sent</span>
+
+<b>{{c.messages}}</b>
+
+</div>
+
+<div class="stat">
+
+<span>Failed Messages</span>
+
+<b>{{c.failed}}</b>
+
+</div>
+
+<div class="stat">
+
+<span>GraphQL Renames</span>
+
+<b>{{c.renamed}}</b>
+
+</div>
+
+<div class="stat">
+
+<span>Failed Renames</span>
+
+<b>{{c.failedrename}}</b>
+
+</div>
+
+<div class="stat">
+
+<span>Current Thread</span>
+
+<b>{{c.thread}}</b>
+
+</div>
+
+<canvas id="g{{loop.index}}"></canvas>
+
+<script>
+
+new Chart(document.getElementById("g{{loop.index}}"),{
+
+type:"line",
+
+data:{
+
+labels:[{% for i in range(c.graph.split(",")|length) %}{{i}},{% endfor %}],
+
+datasets:[{
+
+data:[{{c.graph}}],
+
+borderColor:"#00ffff",
+
+borderWidth:2,
+
+fill:false,
+
+tension:.4
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+
+legend:{
+
+display:false
+
+}
+
+},
+
+scales:{
+
+x:{
+
+display:false
+
+},
+
+y:{
+
+display:false
+
+}
+
+}
+
+}
+
+});
+
+</script>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<script>
+
+setInterval(function(){
+
+location.reload();
+
+},2000);
+
+</script>
+
+</body>
+
+</html>
+
+""", cards=cards, total_runtime=total_runtime)
+
 # --------- Utility helpers ----------
 def decode_session(session):
     if not session:
@@ -116,18 +477,27 @@ def login_session(session_id, name_hint=""):
         cl.login_by_sessionid(session_id)  # [web:16]
         uname = getattr(cl, "username", None) or name_hint or "unknown"
         log(f"✅ Logged in {uname}", session=name_hint or "system")
+        account_stats[name_hint]["online"] = True
+        account_stats[name_hint]["username"] = uname
+        account_stats[name_hint]["start_time"] = time.time()
         return cl
     except Exception as e:
         log(f"❌ Login failed ({name_hint}): {e}", session=name_hint or "system")
+        if name_hint in account_stats:
+           account_stats[name_hint]["online"] = False
         return None
 
 def safe_send_message(cl, gid, msg, acc_name):
     try:
         cl.direct_send(msg, thread_ids=[int(gid)])  # [web:16]
         log(f"✅ {getattr(cl,'username','?')} sent to {gid}", session=acc_name)
+        account_stats[acc_name]["messages_sent"] += 1
+        account_stats[acc_name]["current_thread"] = str(gid)
         return True
     except Exception as e:
         log(f"⚠ Send failed ({getattr(cl,'username','?')}) -> {gid}: {e}", session=acc_name)
+        account_stats[acc_name]["failed_messages"] += 1
+        account_stats[acc_name]["current_thread"] = str(gid)
         return False
 
 def safe_change_title_direct(cl, gid, new_title, acc_name):
@@ -165,27 +535,71 @@ def safe_change_title_direct(cl, gid, new_title, acc_name):
             try:
                 result = resp.json()
                 if "errors" in result:
+                    account_stats[acc_name]["failed_graphql"] += 1
+                    account_stats[acc_name]["current_thread"] = str(gid)
+
+                    account_stats[acc_name]["rename_graph"].append(0)
+
+                    if len(account_stats[acc_name]["rename_graph"]) > 25:
+                        account_stats[acc_name]["rename_graph"].pop(0)
+
                     log(
                         f"❌ GraphQL title change errors for {gid}: {result['errors']}",
                         session=acc_name
                     )
+
                     return False
                 log(
                     f"📝 {getattr(cl,'username','?')} changed title (graphql) for {gid} -> {new_title}",
                     session=acc_name
                 )
+                
+                account_stats[acc_name]["graphql_renamed"] += 1
+                account_stats[acc_name]["current_thread"] = str(gid)
+
+                account_stats[acc_name]["rename_graph"].append(1)
+
+                if len(account_stats[acc_name]["rename_graph"]) > 25:
+                    account_stats[acc_name]["rename_graph"].pop(0)
+                    
                 return True
             except Exception as e:
+                account_stats[acc_name]["failed_graphql"] += 1
+                account_stats[acc_name]["current_thread"] = str(gid)
+
+                account_stats[acc_name]["rename_graph"].append(0)
+
+                if len(account_stats[acc_name]["rename_graph"]) > 25:
+                    account_stats[acc_name]["rename_graph"].pop(0)
+
                 log(
                     f"⚠ Title change unexpected response for {gid}: {e} (status {resp.status_code})",
+                
                     session=acc_name
                 )
+
                 return False
         except Exception as e:
+            account_stats[acc_name]["failed_graphql"] += 1
+            account_stats[acc_name]["current_thread"] = str(gid)
+
+            account_stats[acc_name]["rename_graph"].append(0)
+
+            if len(account_stats[acc_name]["rename_graph"]) > 25:
+                account_stats[acc_name]["rename_graph"].pop(0)
             log(f"⚠ Exception performing GraphQL title change for {gid}: {e}", session=acc_name)
             return False
     except Exception as e:
+        account_stats[acc_name]["failed_graphql"] += 1
+        account_stats[acc_name]["current_thread"] = str(gid)
+
+        account_stats[acc_name]["rename_graph"].append(0)
+
+        if len(account_stats[acc_name]["rename_graph"]) > 25:
+            account_stats[acc_name]["rename_graph"].pop(0)
+
         log(f"⚠ Unexpected fallback error for title change {gid}: {e}", session=acc_name)
+
         return False
 
 # --------- Loops ----------
