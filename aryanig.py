@@ -320,7 +320,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="session">
 
-{{c.session}}
+{{c.username}}
 
 </div>
 
@@ -336,7 +336,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="stat">
 
-<span>📨 </span>
+<span>Messages Sent</span>
 
 <b>{{c.messages}}</b>
 
@@ -344,7 +344,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="stat">
 
-<span>❌</span>
+<span>Failed Messages</span>
 
 <b>{{c.failed}}</b>
 
@@ -352,7 +352,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="stat">
 
-<span>NCS 💠</span>
+<span>GraphQL Renames</span>
 
 <b>{{c.renamed}}</b>
 
@@ -360,7 +360,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="stat">
 
-<span>❌</span>
+<span>Failed Renames</span>
 
 <b>{{c.failedrename}}</b>
 
@@ -368,7 +368,7 @@ RUNTIME ⌛ {{total_runtime}}
 
 <div class="stat">
 
-<span>🥤 GC</span>
+<span>Current Thread</span>
 
 <b>{{c.thread}}</b>
 
