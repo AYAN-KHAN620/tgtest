@@ -6,7 +6,7 @@ import requests
 import logging
 import json
 from flask import Flask, jsonify
-from instagrapi import Client  # [web:16]
+from instagrapi import Client
 
 SESSION_ID_1 = os.getenv("SESSION_ID_1")
 SESSION_ID_2 = os.getenv("SESSION_ID_2")
@@ -19,12 +19,7 @@ MESSAGE_TEXT = os.getenv("MESSAGE_TEXT", "Hello 👋")
 SELF_URL = os.getenv("SELF_URL", "")
 NC_TITLES_RAW = os.getenv("NC_TITLES", "") 
 SPAM_START_OFFSET = int(os.getenv("SPAM_START_OFFSET", "1"))
-SPAM_GAP_BETWEEN_ACCOUNTS = int(os.getenv("SPAM_GAP_BETWEEN_ACCOUNTS", "6"))
 NC_START_OFFSET = int(os.getenv("NC_START_OFFSET", "1"))
-NC_ACC_GAP = int(os.getenv("NC_ACC_GAP", "30"))
-
-MSG_REFRESH_DELAY = int(os.getenv("MSG_REFRESH_DELAY", "1"))
-BURST_COUNT = int(os.getenv("BURST_COUNT", "1"))
 SELF_PING_INTERVAL = int(os.getenv("SELF_PING_INTERVAL", "60"))
 COOLDOWN_ON_ERROR = int(os.getenv("COOLDOWN_ON_ERROR", "300"))
 DOC_ID = os.getenv("DOC_ID", "29088580780787855")
@@ -78,11 +73,11 @@ def dashboard():
 
     uptime = int(time.time() - START_TIME)
 
-    hours = uptime // 3600
-    minutes = (uptime % 3600) // 60
-    seconds = uptime % 60
+    h = uptime // 3600
+    m = (uptime % 3600) // 60
+    s = uptime % 60
 
-    runtime = f"{hours:02}:{minutes:02}:{seconds:02}"
+    runtime = f"{h:02}:{m:02}:{s:02}"
 
     with logs_lock:
         cards = dict(dashboard_status)
@@ -90,12 +85,7 @@ def dashboard():
     active_cards = []
 
     for acc in cards.values():
-        if not acc:
-            continue
-
-        username = acc.get("username", "").strip()
-
-        if username:
+        if acc and acc.get("username"):
             active_cards.append(acc)
 
     html = f"""
@@ -118,7 +108,6 @@ box-sizing:border-box;
 body{{
 background:#f2f2f2;
 font-family:Consolas,monospace;
-color:#111;
 padding:40px;
 }}
 
@@ -126,7 +115,6 @@ padding:40px;
 text-align:center;
 font-size:42px;
 font-weight:bold;
-letter-spacing:2px;
 margin-bottom:8px;
 }}
 
@@ -138,49 +126,68 @@ margin-bottom:35px;
 
 .container{{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
+flex-wrap:wrap;
 gap:25px;
 }}
 
 .card{{
-width:310px;
-background:#fff;
+width:320px;
+height:760px;
+background:white;
 border:2px solid #111;
 border-radius:14px;
-padding:22px;
+padding:18px;
 box-shadow:0 8px 18px rgba(0,0,0,.18);
-transition:.25s;
-}}
-
-.card:hover{{
-transform:translateY(-3px);
+display:flex;
+flex-direction:column;
 }}
 
 .username{{
 font-size:24px;
 font-weight:bold;
-padding-bottom:12px;
-margin-bottom:18px;
+text-align:center;
+padding-bottom:14px;
 border-bottom:2px solid #222;
+margin-bottom:8px;
 }}
 
-.row{{
+.status{{
+height:52px;
+display:flex;
+align-items:center;
+justify-content:center;
 font-size:18px;
-padding:10px 0;
-border-bottom:1px solid #ddd;
-word-break:break-word;
+font-weight:bold;
+border-bottom:2px solid #222;
+margin-bottom:6px;
 }}
 
-.row:last-child{{
+.logs{{
+flex:1;
+display:flex;
+flex-direction:column;
+overflow:hidden;
+}}
+
+.logline{{
+height:31px;
+display:flex;
+align-items:center;
+padding:0 8px;
+font-size:15px;
+border-bottom:1px solid #e5e5e5;
+}}
+
+.logline:last-child{{
 border-bottom:none;
 }}
 
 .footer{{
 margin-top:35px;
 text-align:center;
-font-size:14px;
-color:#555;
+font-size:15px;
+font-weight:bold;
 }}
 
 </style>
@@ -202,6 +209,13 @@ RUNTIME ⏳ {runtime}
 
     for acc in active_cards:
 
+        logs = acc.get("logs", [])
+
+        if len(logs) > 20:
+            logs = logs[-20:]
+
+        logs = [""] * (20 - len(logs)) + logs
+
         html += f"""
 <div class="card">
 
@@ -209,12 +223,17 @@ RUNTIME ⏳ {runtime}
 {acc.get("username","-")}
 </div>
 
-<div class="row">
+<div class="status">
 {acc.get("status","❌ INACTIVE")}
 </div>
 
-<div class="row">
-{"<br>".join(acc.get("logs", []))}
+<div class="logs">
+"""
+
+        for line in logs:
+            html += f'<div class="logline">{line}</div>'
+
+        html += """
 </div>
 
 </div>
@@ -245,7 +264,7 @@ def login_session(session_id, name_hint=""):
     session_id = decode_session(session_id)
     try:
         cl = Client()
-        cl.login_by_sessionid(session_id)  # [web:16]
+        cl.login_by_sessionid(session_id)
         uname = getattr(cl, "username", None) or name_hint or "unknown"
         log(f"✅ Logged in {uname}", session=name_hint or "system")
         return cl
@@ -255,7 +274,7 @@ def login_session(session_id, name_hint=""):
 
 def safe_send_message(cl, gid, msg, acc_name):
     try:
-        cl.direct_send(msg, thread_ids=[int(gid)])  # [web:16]
+        cl.direct_send(msg, thread_ids=[int(gid)])
         log(f"✅ {getattr(cl,'username','?')} sent to {gid}", session=acc_name)
 
         update_dashboard(
@@ -276,7 +295,7 @@ def safe_send_message(cl, gid, msg, acc_name):
 
 def safe_change_title_direct(cl, gid, new_title, acc_name):
     try:
-        tt = cl.direct_thread(int(gid))  # [web:16]
+        tt = cl.direct_thread(int(gid))
         try:
             tt.update_title(new_title)
             log(
@@ -452,19 +471,6 @@ def self_ping_loop():
         time.sleep(SELF_PING_INTERVAL)
 
 def start_bot():
-    log(
-        "STARTUP: "
-        f"SESSION_ID_1={repr(SESSION_ID_1)}, "
-        f"SESSION_ID_2={repr(SESSION_ID_2)}, "
-        f"SESSION_ID_3={repr(SESSION_ID_3)}, "
-        f"SESSION_ID_4={repr(SESSION_ID_4)}, "
-        f"SESSION_ID_5={repr(SESSION_ID_5)}, "
-        f"SESSION_ID_6={repr(SESSION_ID_6)}, "
-        f"GROUP_IDS={repr(GROUP_ID)}, MESSAGE_TEXT={repr(MESSAGE_TEXT)}, "
-        f"NC_TITLES={repr(NC_TITLES_RAW)}",
-        session="system"
-    )
-
     sessions = [
         decode_session(SESSION_ID_1),
         decode_session(SESSION_ID_2),
@@ -583,4 +589,3 @@ if __name__ == "__main__":
         debug=False,
         use_reloader=False
     )
-
