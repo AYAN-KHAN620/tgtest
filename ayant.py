@@ -214,7 +214,7 @@ RUNTIME ⏳ {runtime}
         if len(logs) > 20:
             logs = logs[-20:]
 
-        logs = [""] * (20 - len(logs)) + logs
+        logs = logs + [""] * (20 - len(logs))
 
         html += f"""
 <div class="card">
